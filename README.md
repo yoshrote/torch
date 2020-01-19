@@ -1,6 +1,6 @@
 # Torch: A Prometheus metrics aggregator
 
-Torch is a web application meant to fill in for a use case the the Prometheus Pushgateway explicitly does not support, aggregating metrics.  This is useful for scenarios where standard code instrumentation fails such as a python web application which uses multiple worker processes.  If we use standard instrumentation, we would only get the results from whichever worker serves the page that Prometheus will scrape rather than the combined metrics from all of the worker processes.
+Torch is a web application meant to handle use cases that the Prometheus Pushgateway explicitly does not support, aggregating metrics.  This is useful for scenarios where standard code instrumentation fails such as a python web application which uses multiple worker processes.  If we use standard instrumentation, we would only get the results from whichever worker serves the page that Prometheus will scrape rather than the combined metrics from all of the worker processes.
 
 ## How to use
 

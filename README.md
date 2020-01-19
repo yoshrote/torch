@@ -8,7 +8,7 @@ Install the torch python package. It will create a script named torch. You must 
 
 By default a metric/label combination which has not been updated will be removed after 24 hours.  Set the environment variable `TORCH_TTL` to change the number of hours to wait before cleaning up old metrics.
 
-###Usage
+### Usage
 
     SERVICE_PORT=9092 torch
 

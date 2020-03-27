@@ -190,7 +190,7 @@ class Registry(dict):
 		super(Registry, self).__setitem__(key, value)
 
 	def render(self):
-		results = '{}\n'.format('\n'.join(metric.render() for metric in self.itervalues()))
+		results = '{}\n'.format('\n'.join(metric.render() for _, metric in sorted(self.iteritems(), key=lambda x: x[0][1])))
 		for metric in self.itervalues():
 			metric.cleanup(self.ttl)
 		return results
